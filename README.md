@@ -50,7 +50,7 @@ java01                   running (virtualbox)
 
 #### Deployment
 
-To deploy Docker on Vagrant, you just have to run the Ansible playbook java.yml with this command :
+To deploy Java on Vagrant, you just have to run the Ansible playbook java.yml with this command :
 
 ```
 ansible-playbook java.yml
