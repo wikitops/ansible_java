@@ -14,8 +14,8 @@ What things you need to run this Ansible playbook :
 *   Update the Vagrant file based on your computer (CPU, memory), if needed
 *   You must have download the ubuntu Xenial64 vagrant box :
 
-```
-vagrant box add https://app.vagrantup.com/ubuntu/boxes/xenial64
+```bash
+$ vagrant box add https://app.vagrantup.com/ubuntu/boxes/xenial64
 ```
 
 ### Usage
@@ -28,19 +28,19 @@ Be aware that you need to be in the Vagrant directory to be able to run the comm
 
 Vagrant needs to init the project to run and build it :
 
-```
-vagrant up
+```bash
+$ vagrant up
 ```
 
 After build, you can check which virtual machine Vagrant has created :
 
-```
-vagrant status
+```bash
+$ vagrant status
 ```
 
 If all run like it is expected, you should see something like this :
 
-```
+```bash
 $ vagrant status
 
 Current machine states:
@@ -52,18 +52,18 @@ java01                   running (virtualbox)
 
 To deploy Java on Vagrant, you just have to run the Ansible playbook java.yml with this command :
 
-```
-ansible-playbook java.yml
+```bash
+$ ansible-playbook java.yml
 ```
 
-If all run like it is expected, you should have java installed and configured on the Vagrant instance.
+If everything run as expected, you should have java installed and configured on the Vagrant instance.
 
 #### Destroy
 
-To destroy on what Vagrant has created, just run this command :
+To destroy the Vagrant resources created, just run this command :
 
-```
-vagrant destroy
+```bash
+$ vagrant destroy
 ```
 
 ## Author
