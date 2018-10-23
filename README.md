@@ -15,7 +15,7 @@ What things you need to run this Ansible playbook :
 *   You must have download the ubuntu Xenial64 vagrant box :
 
 ```bash
-$ vagrant box add https://app.vagrantup.com/ubuntu/boxes/xenial64
+$ vagrant box add https://app.vagrantup.com/ubuntu/boxes/bionic64
 ```
 
 ### Usage
