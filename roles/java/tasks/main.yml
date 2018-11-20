@@ -10,6 +10,7 @@
   with_items: "{{ java_package }}"
 
 - name: JAVA | Get java home
+  changed_when: false
   shell: readlink -f /usr/bin/java | sed "s:bin/java::"
   register: java_home
 
