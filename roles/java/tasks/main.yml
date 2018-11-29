@@ -2,6 +2,7 @@
 
 - name: JAVA | Gather OS specific variables
   include_vars: "{{ ansible_os_family }}.yml"
+  when: java_package == ''
 
 - name: JAVA | Installation
   package:
